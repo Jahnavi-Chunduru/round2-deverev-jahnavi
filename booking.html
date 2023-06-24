@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1>Vaccination Preferences</h1>
+
+<p>Select Vaccine type:</p>
+    <input type="radio" id="covaxin" name="vaccine_type" value="Covaxin">
+    <label for="covaxin">Covaxin</label><br>
+    <input type="radio" id="covishield" name="vaccine_type" value="Covishield">
+    <label for="covishield">Covishield</label><br>
+    <input type="radio" id="sputnikv" name="vaccine_type" value="SputnikV">
+    <label for="sputnikv">Sputnik V</label><br>
+    <input type="radio" id="any" name="vaccine_type" value="Any">
+    <label for="any">Any</label>
+<br>
+<p>Select Age group:</p>
+    <input type="radio" id="teens" name="age_group" value="15-19 yrs">
+    <label for="teens"></label>15-19 yrs<br>
+    <input type="radio" id="midage" name="age_group" value="20-50 yrs">
+    <label for="midage">20-45 yrs</label><br>
+    <input type="radio" id="senior" name="age_group" value="50+ yrs">
+    <label for="senior">50+ yrs</label>
+    
+<br>
+<p>Select Fee type:</p>
+    <input type="radio" id="free" name="fee_type" value="Free">
+    <label for="free"></label>Free<br>
+    <input type="radio" id="paid" name="fee_type" value="Paid">
+    <label for="paid">Paid</label><br>
+    <input type="radio" id="any" name="fee_type" value="Any">
+    <label for="any">Any</label>
+    
+<br>
+
+<p>Select Dose:</p>
+    <input type="radio" id="Dose1" name="dose" value="Dose1">
+    <label for="Dose1"></label>Dose-1<br>
+    <input type="radio" id="Dose2" name="dose" value="Dose2">
+    <label for="Dose2">Dose-2</label><br>
+    <input type="radio" id="predose" name="dose" value="Precautiondose">
+    <label for="predose">Precaution dose</label>
+    
+<br>
+<br>
+  <label for="birthday">Date:</label>
+  <input type="date" id="date" name="date">
+  <input type="submit">
+<br>
+<br>
+
+
+<head>
+    <script src="cities.js"></script>
+    <title>Booking</title>
+</head>
+<body>
+<select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+<select id ="state" class="form-control" required></select>
+<script language="javascript">print_state("sts");</script>
+</body>
+</html>
